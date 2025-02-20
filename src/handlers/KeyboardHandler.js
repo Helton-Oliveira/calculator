@@ -1,6 +1,6 @@
-import DOMEvent from "./DOMEvent.js"
+import InputHandler from "./InputHandler.js"
 
-export default class KeyEvent extends DOMEvent {
+export default class KeyboardHandler extends InputHandler {
     constructor(document, textNumber, textResult, calculator) {
         super(textNumber, textResult, calculator);
         this.document = document;

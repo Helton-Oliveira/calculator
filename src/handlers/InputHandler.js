@@ -1,4 +1,4 @@
-export default class DOMEvent {
+export default class InputHandler {
 
     constructor(textNumber, textResult, calculator) {
         this.numbersEntered = [];

@@ -1,6 +1,6 @@
-import DOMEvent from "./DOMEvent.js";
+import InputHandler from "./InputHandler.js";
 
-export default class ClickEvent extends DOMEvent {
+export default class ClicklHandler extends InputHandler {
     constructor(textNumber, textResult, btnKeys, calculator) {
         super(textNumber, textResult, calculator)
         this.btns = btnKeys
