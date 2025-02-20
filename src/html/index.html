@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main data-content="content" class="content">
+        <section data-display="display" class="display">
+            <div data-digitedNumbers="digitedNumbers" class="digitedNumbers"></div>
+            <div data-result="result" class="result"></div>
+        </section>
+
+        <section data-keyboard="keyboard" class="keyboard">
+            <ul>
+              <li><button data-key="delete" class="deleteBtn">del</button></li>
+              <li><button data-key=".">.</button></li>
+              <li><button ><img src="../img/icon.svg" alt="" data-key="backspace"></button></li>
+              <li><button data-key="*">*</button></li>
+              <li><button data-key="1">1</button></li>
+              <li><button data-key="2">2</button></li>
+              <li><button data-key="3">3</button></li>
+              <li><button data-key="+">+</button></li>
+              <li><button data-key="4">4</button></li>
+              <li><button data-key="5">5</button></li>
+              <li><button data-key="6">6</button></li>
+              <li><button data-key="-">-</button></li>
+              <li><button data-key="7">7</button></li>
+              <li><button data-key="8">8</button></li>
+              <li><button data-key="9">9</button></li>
+              <li><button data-key="/">/</button></li>
+              <li><button data-key="0">0</button></li>
+              <li><button data-key="equals" class="equalsBtn">=</button></li>
+
+            </ul>
+        </section>
+
+        <script type="module" src="../js/main.js"></script>
+    </main>
+</body>
+</html>
