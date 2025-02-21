@@ -7,7 +7,7 @@ import Calculator from "../core/Calculator.js";
 
 function main() {
     const calculator = new Calculator()
-    const keyEvent = new KeyEvent(document, digitedNumber, resultText, calculator) 
+    const keyEvent = new KeyEvent(digitedNumber, resultText, calculator) 
     const clickEvent = new ClickEvent(digitedNumber, resultText, btnKeys, calculator)
     clickEvent.addClickEvent()
     keyEvent.addKeyUpEvent()
