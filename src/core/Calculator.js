@@ -24,18 +24,17 @@ export default class Calculator {
         if (seccond === 0) {
             throw new Error("ERROR: Divisão por zero não é permitida");
         }
-        console.log(first, seccond)
         this.#result = first / seccond
         return this.#result
     }
 
     evaluateExpression(input) {
-        input = this.resolveOperations(input, ['*', '/']);
-        input = this.resolveOperations(input, ['+', '-']);
+        input = this.#resolveOperations(input, ['*', '/']);
+        input = this.#resolveOperations(input, ['+', '-']);
         return parseFloat(input[0]);
     }
 
-    resolveOperations(input, operators) {
+    #resolveOperations(input, operators) {
         let result = [...input]; 
 
         let i = 0;
